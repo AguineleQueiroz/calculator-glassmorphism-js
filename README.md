@@ -17,10 +17,8 @@ Projeto desenvolvido utilizando:
 
 ### Calculadora desenvolvida
 
-![calculator](https://user-images.githubusercontent.com/66737248/161094898-254637f6-cc17-4da0-95eb-4c747617720a.png)
-
 <p align: "center">
-    <img src="assets/gif/ezgif.com-gif-maker.gif" width= "470" height="300" >
+    <img src="assets/gif/ezgif.com-gif-maker.gif" width= "600" height="300" >
 </p>
 
 ### Autor:
