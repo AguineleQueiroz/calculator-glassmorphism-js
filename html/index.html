@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../assets/css/calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="calculator">
+        <!-- display -->
+        <header id="output">
+          <div id="last-operand" last-operand></div>
+          <div id="current-operand" current-operand></div>
+        </header>
+        <!-- values and operators -->
+        <button class="btn-calculator span-two-cols" clear-all-data>AC</button>
+        <button class="btn-calculator" delete-data>DEL</button>
+        <button class="btn-calculator btn-operator" operator-symbol>÷</button>
+        <button class="btn-calculator" data-number>7</button>
+        <button class="btn-calculator" data-number>8</button>
+        <button class="btn-calculator" data-number>9</button>
+        <button class="btn-calculator btn-operator" operator-symbol>*</button>
+        <button class="btn-calculator" data-number>4</button>
+        <button class="btn-calculator" data-number>5</button>
+        <button class="btn-calculator" data-number>6</button>
+        <button class="btn-calculator btn-operator" operator-symbol>-</button>
+        <button class="btn-calculator" data-number>1</button>
+        <button class="btn-calculator" data-number>2</button>
+        <button class="btn-calculator" data-number>3</button>
+        <button class="btn-calculator btn-operator" operator-symbol>+</button>
+        <button class="btn-calculator btn-zero" data-number>0</button>
+        <button class="btn-calculator span-two-cols " data-number>.</button>
+        <button class="btn-calculator btn-operator btn-equal" equal-symbol>=</button>
+    </section>
+
+    <div class="teste"></div>
+    <script src="../assets/js/calculator.js"></script>
+  </body>
+</html>
