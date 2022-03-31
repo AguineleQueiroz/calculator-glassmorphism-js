@@ -18,7 +18,7 @@ Projeto desenvolvido utilizando:
 ### Calculadora desenvolvida
 
 <p align: "center">
-    <img src="assets/gif/ezgif.com-gif-maker.gif" width= "600" height="300" >
+    <img src="assets/gif/ezgif.com-gif-maker.gif" width= "800" height="600" >
 </p>
 
 ### Autor:
