@@ -17,9 +17,7 @@ Projeto desenvolvido utilizando:
 
 ### Calculadora desenvolvida
 
-<p align: "center">
-    <img src="assets/gif/ezgif.com-gif-maker.gif" width= "720" height="420" >
-</p>
+![](/assets/img/print-calculator.png)
 
 ### Autor:
     Aguinele Queiroz da Silva
