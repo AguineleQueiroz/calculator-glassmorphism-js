@@ -10,46 +10,90 @@
 :root{
     --color1: #1B1A17;
     --color2: #f5f5f5;
-    --color3: #d1d1d1;
+    --color3: rgba(219, 219, 219, 0.335);
     --color4: #F0A500;
-    --color5: #EAEA7F;
+    --color5: #baffb4ec;
     --color6: #ffffff;
     --color7: #1b1a17f8;
     --color8: #24231f6e;
     --color9: #333330;
+    --color10: #203239;
+    --color11: #2666CF;
+    --color12: #90E0EF;
+    --color13: #FC4F4F;
+    --color14: #F10086;
+    --colorTransparent: rgba(255, 255, 255, 0.05);
+    --colorBorder: rgba(255, 255, 255, 0.05);
+    --colorExtern: rgba(255, 255, 255, 0.2);
+    --colorShadow: rgba(0, 0, 0, 0.5);
 }
 
 body{
-    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color1);
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--color12), var(--color11));
+    clip-path: circle(20% at 70% 20%);
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--color14), var(--color13));
+    clip-path: circle(23% at 30% 80%);
+}
+
+#calculator,
+#calculator > .btn-calculator,
+#calculator > .btn-calculator:hover,
+#calculator > .btn-operator,
+#output {
+    background: var(--colorTransparent);
 }
 
 #calculator{
     display: grid;
+    position: relative;
     grid-template-columns: repeat(4, 90px);
     grid-template-rows: repeat(6, 90px);
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    margin: 0 auto;
+    margin: auto;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--colorExtern);
 }
 
 #calculator > .btn-calculator{
     cursor: pointer;
-    border: .1px solid var(--color8);
+    border: 1px solid var(--colorBorder);
     outline: none;
-    color: var(--color3);
-    background-color: var(--color1);
+    color: var(--color6);
+    transition: 0.5s;
 }
 
 #calculator > .btn-calculator:hover{
-    color: var(--color1);
-    border: none;
-    background-color: var(--color5);
+    transition: 0s;
+    background-color: var(--color3);
 }
 
-#calculator > .btn-operator{
-    color: var(--color2);
-    background-color: var(--color4);
+#calculator > .btn-calculator:active{
+    background-color: var(--color5);
 }
 
 #output{
@@ -57,10 +101,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--color7);
     word-wrap: break-word;
     word-break: break-all;
-    border-radius: 5px 5px 0 0px;
     padding: 2px 10px;
     place-items: center;
 }
@@ -70,30 +112,18 @@ body{
     width: 100%;
     height: 70px;
     padding: 5px 28px;
-    background-color: var(--color9);
     text-align: end;
 }
 
 #output > #last-operand{
-    border-radius: 3px 3px 0 0 ;
-    color: var(--color3);   
+    color: var(--color6);   
 }
 
 #output > #current-operand {
-    border-radius: 0 0 3px 3px;
     color: var(--color6);
     font-size: 30px;
-    
 }
 
 .span-two-cols{
     grid-column: span 2;
-}
-
-.btn-zero{
-    border-radius: 0 0 0 5px;
-}
-
-.btn-equal{
-    border-radius: 0 0 5px 0px;
 }
