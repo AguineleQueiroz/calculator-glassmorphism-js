@@ -1,6 +1,9 @@
 # Calculator-js
 Calculadora básica, desenvolvida utilizando HTML5, CSS3 e JavaScript.
 
+## Status
+[![Status Completo](https://img.shields.io/badge/STATUS-COMPLETO-green?style=for-the-badge)]()
+
 ## Tecnologias
 
 Projeto desenvolvido utilizando:
@@ -15,7 +18,7 @@ Projeto desenvolvido utilizando:
 
 * [Ubuntu](https://ubuntu.com/) : Distribuição Linux
 
-### Calculadora desenvolvida
+### Calculadora Design
 
 ![](/assets/img/print-calculator.png)
 
